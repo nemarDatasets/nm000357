@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Movie watching and recognition memory: depth-electrode macro iEEG from Keles et al. 2024 (DANDI 000623)",
+  "description": "Intracranial EEG recorded from clinical macroelectrode contacts of hybrid Behnke-Fried depth electrodes in 16 patients with drug-resistant epilepsy at Cedars-Sinai Medical Center. Participants passively watched an edited 8-minute excerpt of Hitchcock's \"Bang! You're Dead\" and then completed a new/old recognition memory test on movie frames with confidence ratings. Electrodes sampled amygdala, hippocampus, medial frontal cortex and lateral cortex. This iEEG-BIDS representation converts the macroelectrode field potentials from the DANDI 000623 NWB release without altering signal values.",
+  "methods_description": "Macro channels were acquired with a Neuralynx ATLAS system at 2000 Hz, low-pass filtered at 500 Hz, and decimated to 1000 Hz. Recordings were cropped by the original authors to 10 s before movie onset through 10 s after the end of the task. The NWB LFP_macro ElectricalSeries was written to BrainVision float32 microvolts without filtering, resampling, re-referencing or channel removal. Trials, TTL markers and movie-frame times were mapped to BIDS events.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
   "authors": {
     "Umit Keles": {},
     "Julien Dubois": {},
@@ -25,6 +30,28 @@
       "orcid": "0000-0002-9207-7069"
     }
   },
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "stereoelectroencephalography"
+    },
+    {
+      "term": "movie watching"
+    },
+    {
+      "term": "recognition memory"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "depth electrodes"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.48324/dandi.000623/0.240227.2023",
@@ -67,14 +94,11 @@
       "award_number": "BCS-2219800"
     }
   ],
-  "title": "Movie watching and recognition memory: depth-electrode macro iEEG from Keles et al. 2024 (DANDI 000623)",
-  "license": "CC-BY-4.0",
-  "dataset_type": "raw",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "34.14 GB (88 files)"
   ],
@@ -85,32 +109,8 @@
     ".tsv",
     ".vhdr",
     ".vmrk",
-    ".yaml"
+    ".yaml",
+    ".yml"
   ],
-  "description": "Depth-electrode macroelectrode intracranial EEG (iEEG/SEEG) recorded from 16 patients with drug-resistant epilepsy during passive viewing of an edited Hitchcock film excerpt and a subsequent new/old recognition memory test. Contacts target the amygdala, hippocampus and medial frontal cortex and also sample lateral cortex. This is an iEEG-BIDS conversion of the macro-LFP data from the DANDI 000623 release by Keles et al. (2024), with signal values unchanged and trial, TTL and movie-frame events provided.",
-  "methods_description": "Macro contacts of hybrid Behnke-Fried depth electrodes were recorded with a Neuralynx ATLAS system at 2000 Hz, low-pass filtered at 500 Hz and decimated to 1000 Hz. Participants watched an 8-min movie excerpt (encoding) and then performed a recognition test on 40 movie frames (20 seen, 20 unseen) with a 1-6 confidence rating. The NWB LFP_macro series was written to BrainVision float32 microvolts without filtering, resampling or re-referencing.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "movie watching"
-    },
-    {
-      "term": "recognition memory"
-    },
-    {
-      "term": "epilepsy"
-    },
-    {
-      "term": "amygdala"
-    },
-    {
-      "term": "hippocampus"
-    }
-  ],
-  "source_hash": "cef03cfcd9d17105758a8035e488e7027bebc8ff9f572f4ae3befb07e03a6c74"
+  "source_hash": "f3d2dd0d13e5c3a23e65bb074ccaa28c7a62506bf431c1499ea2e73db3705297"
 }
