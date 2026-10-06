@@ -26,6 +26,22 @@ it is not duplicated here. Single-neuron spike times, microwire LFP, eye trackin
 saccades and blinks are not converted to BIDS; they remain available, unchanged, in the original NWB
 files copied under sourcedata/dandi-000623/ and on DANDI.
 
+Task and paradigm (Keles et al. 2024, Methods "Task" and "Movie stimulus")
+-------------------------------------------------------------------------
+Each run had two phases. Movie watching: an 8-min edited excerpt (edited from the original 30 min)
+of the black-and-white television episode "Bang! You're Dead" (Alfred Hitchcock Presents, 1961),
+the same edit used in several prior neuroimaging studies; the movie has a frame rate of 25 Hz
+(11971 frames with OpenCV, per the Usage Notes). Participants were told beforehand that a memory
+test would follow. Recognition: 20 novel frames (from parts of the full episode removed in the edit)
+and 20 familiar frames (from the edited version shown) were presented one at a time; participants
+answered on an external response box with a confidence scale from 1 (novel, sure) through 3 (novel,
+most unsure) and 4 (familiar, most unsure) to 6 (familiar, sure). The same set of 80 frames (40 novel,
+40 familiar) was used across participants; the frame order was randomized per run and the 40 frames
+shown differed between the two runs of a participant, while the movie was identical in both runs.
+The authors note that familiarity from the first viewing may affect test-retest reliability of run 2.
+All electrophysiology was recorded in the epilepsy monitoring unit (EMU); electrode implantation and
+placement followed clinical protocols independent of the study.
+
 Ethics
 ------
 From the data descriptor: participation was voluntary and participants (or their legal guardian if
@@ -131,6 +147,31 @@ Known limitations
 - Reference and electrode contact size are not documented in the source and are given as unknown/n/a.
 - Movie-frame, TTL and trial times come from the stimulus computer clock synchronised by the authors
   to the recording via TTLs; this conversion does not re-estimate that synchronisation.
+
+How to load
+-----------
+Python (MNE-BIDS):
+
+  from mne_bids import BIDSPath, read_raw_bids
+  bp = BIDSPath(root="<path to this dataset>", subject="CS51", session="P51CSR1",
+                task="movie", datatype="ieeg", suffix="ieeg", extension=".vhdr")
+  raw = read_raw_bids(bp)            # 1000 Hz, SEEG channels; events.tsv -> raw.annotations
+  import pandas as pd
+  ev = pd.read_csv(bp.copy().update(suffix="events", extension=".tsv").fpath, sep="\t")
+
+Column meanings and code levels (TTL codes, experiment ids, response codes) are in *_events.json.
+The original NWB files (spikes, microwire LFP, eye tracking) can be read with pynwb; the authors'
+code is at https://github.com/rutishauserlab/bmovie-release-NWB-BIDS.
+
+Citations
+---------
+- Keles U, Dubois J, Le KJM, Tyszka JM, Kahn DA, Reed CM, Chung JM, Mamelak AN, Adolphs R,
+  Rutishauser U. Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie
+  watching in human patients. Sci Data 11, 214 (2024). https://doi.org/10.1038/s41597-024-03029-1
+- Keles U et al. (2024). Data for: Multimodal single-neuron, intracranial EEG, and fMRI brain
+  responses during movie watching in human patients (Version 0.240227.2023). DANDI archive.
+  https://doi.org/10.48324/dandi.000623/0.240227.2023
+- Related fMRI part of the study (same task, subset of participants): OpenNeuro ds004798.
 
 Provenance
 ----------

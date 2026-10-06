@@ -21,10 +21,34 @@
     }
   },
   "value": {
-    "Description": "TTL code. Source description: The events correspond to the TTL markers for each session. The TTL markers are the following: 4 = start of the movie, 40-49 = frame number mapping to a log file, 33 = keypress, 7 = start probe for recognition, 9 = startITI, 1 = start fixation, 10 = end fixation, 52 = screen of instruction, 66 = end of experiment"
+    "Description": "TTL code. Source description: The events correspond to the TTL markers for each session. The TTL markers are the following: 4 = start of the movie, 40-49 = frame number mapping to a log file, 33 = keypress, 7 = start probe for recognition, 9 = startITI, 1 = start fixation, 10 = end fixation, 52 = screen of instruction, 66 = end of experiment Codes 0 and 32 also occur in a few source files but are not described by the source.",
+    "Levels": {
+      "1": "start fixation",
+      "4": "start of the movie",
+      "7": "start probe for recognition",
+      "9": "startITI",
+      "10": "end fixation",
+      "33": "keypress",
+      "40": "frame number mapping to a log file (40-49)",
+      "41": "frame number mapping to a log file (40-49)",
+      "42": "frame number mapping to a log file (40-49)",
+      "43": "frame number mapping to a log file (40-49)",
+      "44": "frame number mapping to a log file (40-49)",
+      "45": "frame number mapping to a log file (40-49)",
+      "46": "frame number mapping to a log file (40-49)",
+      "47": "frame number mapping to a log file (40-49)",
+      "48": "frame number mapping to a log file (40-49)",
+      "49": "frame number mapping to a log file (40-49)",
+      "52": "screen of instruction",
+      "66": "end of experiment"
+    }
   },
   "experiment_id": {
-    "Description": "Experiment/task id recorded at the same timestamp as the TTL. Source description: The experimentid (or task_id) corresponds to the encoding (i.e., movie watching as one trial) or recognition trials. The encoding is indexed by: 2. The recognition trials are indexed by: 3."
+    "Description": "Experiment/task id recorded at the same timestamp as the TTL. Source description: The experimentid (or task_id) corresponds to the encoding (i.e., movie watching as one trial) or recognition trials. The encoding is indexed by: 2. The recognition trials are indexed by: 3.",
+    "Levels": {
+      "2": "encoding (movie watching as one trial)",
+      "3": "recognition trials"
+    }
   },
   "movie_frame": {
     "Description": "Movie frame label as stored in the source. Source description: Movie frame numbers associated with time instances during the encoding (movie watching) phase [starts counting from 0--Python way]"
@@ -33,13 +57,30 @@
     "Description": "Source stimulus file name (stimulus images/movie are copyrighted and are not distributed). The file name for the stimulus"
   },
   "actual_response": {
-    "Description": "The button pressed during experiment, 1-6, where 1:new-sure, 2:new-unsure, 3:new-guessing, 4:old-guessing, 5:old-unsure, 6:old-sure"
+    "Description": "The button pressed during experiment, 1-6, where 1:new-sure, 2:new-unsure, 3:new-guessing, 4:old-guessing, 5:old-unsure, 6:old-sure",
+    "Levels": {
+      "1": "new, sure",
+      "2": "new, unsure",
+      "3": "new, guessing",
+      "4": "old, guessing",
+      "5": "old, unsure",
+      "6": "old, sure"
+    }
   },
   "response_confidence": {
-    "Description": "The confidence level of response (1=guessing, 2=unsure, 3=sure) for each each new/old trial"
+    "Description": "The confidence level of response (1=guessing, 2=unsure, 3=sure) for each each new/old trial",
+    "Levels": {
+      "1": "guessing",
+      "2": "unsure",
+      "3": "sure"
+    }
   },
   "response_correct": {
-    "Description": "Whether the response was correct=1 or incorrect=0 for each new/old trial"
+    "Description": "Whether the response was correct=1 or incorrect=0 for each new/old trial",
+    "Levels": {
+      "0": "incorrect",
+      "1": "correct"
+    }
   },
   "response_time": {
     "Description": "Response latency for recognition trials = source_response_time - source_start_time. n/a for encoding (no response).",

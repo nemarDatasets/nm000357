@@ -3,6 +3,7 @@
   "TaskDescription": "Passive viewing of an 8-min edited excerpt of Alfred Hitchcock's 'Bang! You're Dead' followed by a new/old recognition memory test on 40 movie frames with 1-6 confidence ratings (Keles et al. 2024).",
   "Instructions": "Watch the movie; then judge each frame as new or old with a confidence rating (1 = new, sure ... 6 = old, sure).",
   "InstitutionName": "Cedars-Sinai Medical Center",
+  "InstitutionAddress": "Los Angeles, CA, USA",
   "Manufacturer": "Neuralynx",
   "ManufacturersModelName": "ATLAS",
   "ElectrodeManufacturer": "Ad-Tech Medical",
