@@ -1,0 +1,116 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Umit Keles": {},
+    "Julien Dubois": {},
+    "Kevin J. M. Le": {
+      "orcid": "0000-0002-5406-198X"
+    },
+    "J. Michael Tyszka": {
+      "orcid": "0000-0001-9342-9014"
+    },
+    "David A. Kahn": {
+      "orcid": "0000-0002-0157-0369"
+    },
+    "Chrystal M. Reed": {
+      "orcid": "0000-0002-7157-3645"
+    },
+    "Jeffrey M. Chung": {},
+    "Adam N. Mamelak": {},
+    "Ralph Adolphs": {
+      "orcid": "0000-0002-8053-9692"
+    },
+    "Ueli Rutishauser": {
+      "orcid": "0000-0002-9207-7069"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.48324/dandi.000623/0.240227.2023",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1038/s41597-024-03029-1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000357",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000357",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIMH",
+      "award_number": "P50MH094258",
+      "award_title": "Caltech Conte Center"
+    },
+    {
+      "funder_name": "NINDS",
+      "award_number": "U01NS117839",
+      "award_title": "BRAIN Initiative"
+    },
+    {
+      "funder_name": "Simons Collaboration on the Global Brain",
+      "award_number": "542941"
+    },
+    {
+      "funder_name": "National Science Foundation",
+      "award_number": "BCS-2219800"
+    }
+  ],
+  "title": "Movie watching and recognition memory: depth-electrode macro iEEG from Keles et al. 2024 (DANDI 000623)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "34.14 GB (88 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".nwb",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yaml"
+  ],
+  "description": "Depth-electrode macroelectrode intracranial EEG (iEEG/SEEG) recorded from 16 patients with drug-resistant epilepsy during passive viewing of an edited Hitchcock film excerpt and a subsequent new/old recognition memory test. Contacts target the amygdala, hippocampus and medial frontal cortex and also sample lateral cortex. This is an iEEG-BIDS conversion of the macro-LFP data from the DANDI 000623 release by Keles et al. (2024), with signal values unchanged and trial, TTL and movie-frame events provided.",
+  "methods_description": "Macro contacts of hybrid Behnke-Fried depth electrodes were recorded with a Neuralynx ATLAS system at 2000 Hz, low-pass filtered at 500 Hz and decimated to 1000 Hz. Participants watched an 8-min movie excerpt (encoding) and then performed a recognition test on 40 movie frames (20 seen, 20 unseen) with a 1-6 confidence rating. The NWB LFP_macro series was written to BrainVision float32 microvolts without filtering, resampling or re-referencing.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "movie watching"
+    },
+    {
+      "term": "recognition memory"
+    },
+    {
+      "term": "epilepsy"
+    },
+    {
+      "term": "amygdala"
+    },
+    {
+      "term": "hippocampus"
+    }
+  ],
+  "source_hash": "cef03cfcd9d17105758a8035e488e7027bebc8ff9f572f4ae3befb07e03a6c74"
+}
