@@ -1,0 +1,97 @@
+name	x	y	z	size	group	location	source_origchannel
+LOFC1	-12.44	36.72	-7.3	n/a	Neuralynx-Atlas-macros-1	Left vmPFC	macro-1
+LOFC2	-18.76	37.34	-7.8	n/a	Neuralynx-Atlas-macros-2	Left vmPFC	macro-2
+LOFC3	-24.59	38.33	-7.73	n/a	Neuralynx-Atlas-macros-3	Left vmPFC	macro-3
+LOFC4	-31.41	39.63	-8.22	n/a	Neuralynx-Atlas-macros-4	Left vmPFC	macro-4
+LOFC5	-38.36	39.45	-9.29	n/a	Neuralynx-Atlas-macros-5	Left vmPFC	macro-5
+LOFC6	-43.82	40.07	-9.96	n/a	Neuralynx-Atlas-macros-6	Left vmPFC	macro-6
+LOFC7	-48.75	40.07	-10.28	n/a	Neuralynx-Atlas-macros-7	Left vmPFC	macro-7
+LOFC8	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-8	Left vmPFC	macro-8
+LACC1	-6.54	29.27	24.56	n/a	Neuralynx-Atlas-macros-9	Left ACC	macro-9
+LACC2	-13.26	29.87	24.74	n/a	Neuralynx-Atlas-macros-10	Left ACC	macro-10
+LACC3	-18.61	30.85	26.04	n/a	Neuralynx-Atlas-macros-11	Left ACC	macro-11
+LACC4	-24.15	32.18	27.93	n/a	Neuralynx-Atlas-macros-12	Left ACC	macro-12
+LACC5	-29.35	32.39	27.93	n/a	Neuralynx-Atlas-macros-13	Left ACC	macro-13
+LACC6	-35.3	32.39	27.21	n/a	Neuralynx-Atlas-macros-14	Left ACC	macro-14
+LACC7	-40.7	32.18	26.69	n/a	Neuralynx-Atlas-macros-15	Left ACC	macro-15
+LACC8	-46.57	32.18	26.28	n/a	Neuralynx-Atlas-macros-16	Left ACC	macro-16
+LSMA1	-7.07	11.98	46.7	n/a	Neuralynx-Atlas-macros-17	Left preSMA	macro-17
+LSMA2	-11.87	12.58	47.08	n/a	Neuralynx-Atlas-macros-18	Left preSMA	macro-18
+LSMA3	-16.07	13.18	48.66	n/a	Neuralynx-Atlas-macros-19	Left preSMA	macro-19
+LSMA4	-21.32	14.53	50.46	n/a	Neuralynx-Atlas-macros-20	Left preSMA	macro-20
+LSMA5	-26.09	15.73	51.14	n/a	Neuralynx-Atlas-macros-21	Left preSMA	macro-21
+LSMA6	-31.83	15.73	50.39	n/a	Neuralynx-Atlas-macros-22	Left preSMA	macro-22
+LSMA7	-38.25	15.58	49.26	n/a	Neuralynx-Atlas-macros-23	Left preSMA	macro-23
+LSMA8	-44.13	15.43	47.98	n/a	Neuralynx-Atlas-macros-24	Left preSMA	macro-24
+LAMY1	-20.87	-7	-16.95	n/a	Neuralynx-Atlas-macros-25	Left amygdala	macro-25
+LAMY2	-26.53	-6.42	-17.5	n/a	Neuralynx-Atlas-macros-26	Left amygdala	macro-26
+LAMY3	-31.96	-5.84	-17.5	n/a	Neuralynx-Atlas-macros-27	Left amygdala	macro-27
+LAMY4	-37.66	-5.09	-18.85	n/a	Neuralynx-Atlas-macros-28	Left amygdala	macro-28
+LAMY5	-43.07	-4.49	-19.15	n/a	Neuralynx-Atlas-macros-29	Left amygdala	macro-29
+LAMY6	-48.74	-3.74	-18.85	n/a	Neuralynx-Atlas-macros-30	Left amygdala	macro-30
+LAMY7	-54.59	-2.82	-20.19	n/a	Neuralynx-Atlas-macros-31	Left amygdala	macro-31
+LAMY8	-60.02	-1.33	-20.2	n/a	Neuralynx-Atlas-macros-32	Left amygdala	macro-32
+LHIP1	-29.74	-21.77	-11.15	n/a	Neuralynx-Atlas-macros-33	Left hippocampus	macro-33
+LHIP2	-35.32	-21.66	-12.03	n/a	Neuralynx-Atlas-macros-34	Left hippocampus	macro-34
+LHIP3	-41.52	-20.79	-13.14	n/a	Neuralynx-Atlas-macros-35	Left hippocampus	macro-35
+LHIP4	-46.11	-20.79	-13.27	n/a	Neuralynx-Atlas-macros-36	Left hippocampus	macro-36
+LHIP5	-51.57	-20.03	-13.27	n/a	Neuralynx-Atlas-macros-37	Left hippocampus	macro-37
+LHIP6	-56.78	-20.03	-13.27	n/a	Neuralynx-Atlas-macros-38	Left hippocampus	macro-38
+LHIP7	-62.19	-19.54	-13.27	n/a	Neuralynx-Atlas-macros-39	Left hippocampus	macro-39
+LHIP8	-67.07	-19.54	-12.9	n/a	Neuralynx-Atlas-macros-40	Left hippocampus	macro-40
+LSPE1	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-41	LSPE	macro-41
+LSPE2	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-42	LSPE	macro-42
+LSPE3	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-43	LSPE	macro-43
+LSPE4	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-44	LSPE	macro-44
+LSPE5	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-45	LSPE	macro-45
+LSPE6	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-46	LSPE	macro-46
+LSPE7	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-47	LSPE	macro-47
+LSPE8	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-48	LSPE	macro-48
+ROFC1	10.54	33.36	-10.98	n/a	Neuralynx-Atlas-macros-49	Right vmPFC	macro-49
+ROFC2	15.88	33.36	-10.54	n/a	Neuralynx-Atlas-macros-50	Right vmPFC	macro-50
+ROFC3	21.45	33.36	-9.67	n/a	Neuralynx-Atlas-macros-51	Right vmPFC	macro-51
+ROFC4	27.53	33.11	-9.17	n/a	Neuralynx-Atlas-macros-52	Right vmPFC	macro-52
+ROFC5	33.49	32.24	-7.81	n/a	Neuralynx-Atlas-macros-53	Right vmPFC	macro-53
+ROFC6	39.44	32.24	-6.69	n/a	Neuralynx-Atlas-macros-54	Right vmPFC	macro-54
+ROFC7	44.77	34.17	-7.6	n/a	Neuralynx-Atlas-macros-55	Right vmPFC	macro-55
+ROFC8	51.22	35.85	-6.69	n/a	Neuralynx-Atlas-macros-56	Right vmPFC	macro-56
+RACC1	6.89	27.97	20.95	n/a	Neuralynx-Atlas-macros-57	Right ACC	macro-57
+RACC2	11.86	28.08	21.46	n/a	Neuralynx-Atlas-macros-58	Right ACC	macro-58
+RACC3	17.4	28.49	21.63	n/a	Neuralynx-Atlas-macros-59	Right ACC	macro-59
+RACC4	23.55	29.1	22.24	n/a	Neuralynx-Atlas-macros-60	Right ACC	macro-60
+RACC5	29.85	29.1	22.45	n/a	Neuralynx-Atlas-macros-61	Right ACC	macro-61
+RACC6	36	28.99	22.24	n/a	Neuralynx-Atlas-macros-62	Right ACC	macro-62
+RACC7	42.56	28.28	21.77	n/a	Neuralynx-Atlas-macros-63	Right ACC	macro-63
+RACC8	48.3	29.21	21.46	n/a	Neuralynx-Atlas-macros-64	Right ACC	macro-64
+RSMA1	13.94	14.18	43.56	n/a	Neuralynx-Atlas-macros-65	Right preSMA	macro-65
+RSMA2	18.8	14.64	43.86	n/a	Neuralynx-Atlas-macros-66	Right preSMA	macro-66
+RSMA3	25.36	14.84	44.14	n/a	Neuralynx-Atlas-macros-67	Right preSMA	macro-67
+RSMA4	30.9	14.95	44.66	n/a	Neuralynx-Atlas-macros-68	Right preSMA	macro-68
+RSMA5	37.56	14.64	44.35	n/a	Neuralynx-Atlas-macros-69	Right preSMA	macro-69
+RSMA6	42.58	14.74	44.79	n/a	Neuralynx-Atlas-macros-70	Right preSMA	macro-70
+RSMA7	47.09	14.64	44.89	n/a	Neuralynx-Atlas-macros-71	Right preSMA	macro-71
+RSMA8	52.01	14.84	44.89	n/a	Neuralynx-Atlas-macros-72	Right preSMA	macro-72
+RAMY1	28.75	-7.32	-14.78	n/a	Neuralynx-Atlas-macros-73	Right amygdala	macro-73
+RAMY2	33.72	-6.9	-15.24	n/a	Neuralynx-Atlas-macros-74	Right amygdala	macro-74
+RAMY3	38.8	-6.42	-15.54	n/a	Neuralynx-Atlas-macros-75	Right amygdala	macro-75
+RAMY4	44.05	-5.07	-15.54	n/a	Neuralynx-Atlas-macros-76	Right amygdala	macro-76
+RAMY5	49.46	-4.47	-14.48	n/a	Neuralynx-Atlas-macros-77	Right amygdala	macro-77
+RAMY6	54.99	-3.44	-13.59	n/a	Neuralynx-Atlas-macros-78	Right amygdala	macro-78
+RAMY7	60.11	-3.44	-13.29	n/a	Neuralynx-Atlas-macros-79	Right amygdala	macro-79
+RAMY8	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-80	Right amygdala	macro-80
+RHIP1	35.27	-19.89	-9.73	n/a	Neuralynx-Atlas-macros-81	Right hippocampus	macro-81
+RHIP2	40.1	-19.89	-9.97	n/a	Neuralynx-Atlas-macros-82	Right hippocampus	macro-82
+RHIP3	44.92	-19.89	-9.89	n/a	Neuralynx-Atlas-macros-83	Right hippocampus	macro-83
+RHIP4	49.97	-19.37	-9.9	n/a	Neuralynx-Atlas-macros-84	Right hippocampus	macro-84
+RHIP5	55.77	-18.18	-9.97	n/a	Neuralynx-Atlas-macros-85	Right hippocampus	macro-85
+RHIP6	61.44	-17.08	-9.8	n/a	Neuralynx-Atlas-macros-86	Right hippocampus	macro-86
+RHIP7	66.26	-17.08	-9.92	n/a	Neuralynx-Atlas-macros-87	Right hippocampus	macro-87
+RHIP8	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-88	Right hippocampus	macro-88
+RSPE1	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-89	RSPE	macro-89
+RSPE2	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-90	RSPE	macro-90
+RSPE3	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-91	RSPE	macro-91
+RSPE4	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-92	RSPE	macro-92
+RSPE5	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-93	RSPE	macro-93
+RSPE6	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-94	RSPE	macro-94
+RSPE7	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-95	RSPE	macro-95
+RSPE8	n/a	n/a	n/a	n/a	Neuralynx-Atlas-macros-96	RSPE	macro-96

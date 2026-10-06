@@ -1,0 +1,214 @@
+{
+  "dataset": "DANDI 000623",
+  "source_release": "DANDI:000623/0.240227.2023",
+  "doi": "10.48324/dandi.000623/0.240227.2023",
+  "license": "CC-BY-4.0",
+  "retrieved_by": "dandi CLI download (dandi 0.81.0) + independent SHA-256 verification",
+  "n_files": 29,
+  "total_bytes": 27744749325,
+  "files": [
+    {
+      "file": "sub-CS41/sub-CS41_ses-P41CSR1_behavior+ecephys.nwb",
+      "bytes": 929320399,
+      "sha256": "696388dea25292786e54ca6b3b26171268111f315e554d6a89fd13b1d7f39985",
+      "dandi_asset_id": "3051421d-1d07-49af-8934-bc7f66f3e332",
+      "subject": "sub-CS41"
+    },
+    {
+      "file": "sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb",
+      "bytes": 803882951,
+      "sha256": "0d2865ed760a344040ccc57050747896fb5b3e9860c331a3063a0c4199f2c38c",
+      "dandi_asset_id": "ffcb1836-587e-42f4-887b-50b02948b779",
+      "subject": "sub-CS41"
+    },
+    {
+      "file": "sub-CS42/sub-CS42_ses-P42CSR1_behavior+ecephys.nwb",
+      "bytes": 913018422,
+      "sha256": "7f7086f18a355d3ac257e6a8faf2a8a96f5bf574edfc0dac08f0a8f56026bf53",
+      "dandi_asset_id": "f9af8f8a-26e4-4543-968a-84983f4320c7",
+      "subject": "sub-CS42"
+    },
+    {
+      "file": "sub-CS42/sub-CS42_ses-P42CSR2_behavior+ecephys.nwb",
+      "bytes": 894307064,
+      "sha256": "0b14d3f58b765e7dc8dfb85b14d01e0e36f0dc61f5f3011d09b24b11211987b8",
+      "dandi_asset_id": "d8c2752c-1751-47cc-9648-ff23a609a1b4",
+      "subject": "sub-CS42"
+    },
+    {
+      "file": "sub-CS43/sub-CS43_ses-P43CSR1_behavior+ecephys.nwb",
+      "bytes": 1016236528,
+      "sha256": "c10b89e704caf71a55c7ad60427318ecbee83ce704b8ba223a95e35692c57fdc",
+      "dandi_asset_id": "8f9d0249-a97b-40f5-b784-59cb811f9d8b",
+      "subject": "sub-CS43"
+    },
+    {
+      "file": "sub-CS43/sub-CS43_ses-P43CSR2_behavior+ecephys.nwb",
+      "bytes": 834923452,
+      "sha256": "6e4ebb8bb088d93be2f7b95418338b9bed2c21f390983d899d991f974adb0f37",
+      "dandi_asset_id": "9b5ecbbb-02f0-42b5-a1f7-c0f04408554b",
+      "subject": "sub-CS43"
+    },
+    {
+      "file": "sub-CS44/sub-CS44_ses-P44CSR1_behavior+ecephys.nwb",
+      "bytes": 994457952,
+      "sha256": "dd222b138c734d5a8de66bd8e382b3d5269defd5a4fef4ffad9829dcfa3bf8db",
+      "dandi_asset_id": "002e3f2c-70a2-4061-85bd-6d22131cd8a3",
+      "subject": "sub-CS44"
+    },
+    {
+      "file": "sub-CS47/sub-CS47_ses-P47CSR1_behavior+ecephys.nwb",
+      "bytes": 927817738,
+      "sha256": "bebc189cc43b46ea7e0ccd13b8061ce1348456d1c4c5e56d02e997dad3e33347",
+      "dandi_asset_id": "be6373c8-6c7c-4ff3-9a01-33327ae7d3bf",
+      "subject": "sub-CS47"
+    },
+    {
+      "file": "sub-CS47/sub-CS47_ses-P47CSR2_behavior+ecephys.nwb",
+      "bytes": 897685121,
+      "sha256": "0c6e21fa0b1e267f4aeb3c4a7486d27b2dda6e6b9fc9d607da32554723053c03",
+      "dandi_asset_id": "2b74008f-436f-499b-ac80-ef18c8aae874",
+      "subject": "sub-CS47"
+    },
+    {
+      "file": "sub-CS48/sub-CS48_ses-P48CSR1_behavior+ecephys.nwb",
+      "bytes": 1013020690,
+      "sha256": "580bef6c0a46ecff6b4580d68f85de2fe70d20156d837594d2c4d3c62fbd1936",
+      "dandi_asset_id": "6da4c74d-9308-4d01-8b8b-df801dc37f1d",
+      "subject": "sub-CS48"
+    },
+    {
+      "file": "sub-CS48/sub-CS48_ses-P48CSR2_behavior+ecephys.nwb",
+      "bytes": 988293480,
+      "sha256": "e7cf7efa0679ac708d4d1ae87bb167f08d01286837e2c26b6131baac204a977d",
+      "dandi_asset_id": "ccfeb63a-0aca-47dc-8af1-2849b3b6005d",
+      "subject": "sub-CS48"
+    },
+    {
+      "file": "sub-CS49/sub-CS49_ses-P49CSR1_behavior+ecephys.nwb",
+      "bytes": 1257984064,
+      "sha256": "0e945e966d1cca7bee7441bee7bfbf2c7df3e3764a0fa03af0c7acba5bb49592",
+      "dandi_asset_id": "88863339-ef40-46a8-8b28-1071ee76915d",
+      "subject": "sub-CS49"
+    },
+    {
+      "file": "sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb",
+      "bytes": 946447895,
+      "sha256": "bdac0e2f484e101104a137530b3ee20f398b4727ff1716f6b02b5a4c3504a546",
+      "dandi_asset_id": "41a8980d-82d3-40ce-8b9a-9f81ddd1cf38",
+      "subject": "sub-CS49"
+    },
+    {
+      "file": "sub-CS51/sub-CS51_ses-P51CSR1_behavior+ecephys.nwb",
+      "bytes": 1244681559,
+      "sha256": "c89af9f9d01acbb89ae75fb6b86c5319946ea2959b9b6b8bc681b109ef63d904",
+      "dandi_asset_id": "f4452a85-83fe-4f9d-a37e-8f327dd7a982",
+      "subject": "sub-CS51"
+    },
+    {
+      "file": "sub-CS51/sub-CS51_ses-P51CSR2_behavior+ecephys.nwb",
+      "bytes": 1227348888,
+      "sha256": "97e90b45ab4f42e57b037bfcd77551e129ba87e14427d90320eacc4d2e1986f4",
+      "dandi_asset_id": "124a9770-a390-4ca6-81bc-64080b14297f",
+      "subject": "sub-CS51"
+    },
+    {
+      "file": "sub-CS53/sub-CS53_ses-P53CSR1_behavior+ecephys.nwb",
+      "bytes": 1033846161,
+      "sha256": "b5059ffc956df8a6005aaaa675e4f4e2cf1d081af567cad7faa2354e84644898",
+      "dandi_asset_id": "2551e0a4-c0c7-44b6-a159-dccbf556b8d9",
+      "subject": "sub-CS53"
+    },
+    {
+      "file": "sub-CS53/sub-CS53_ses-P53CSR2_behavior+ecephys.nwb",
+      "bytes": 882270191,
+      "sha256": "b9a7815311d9eeea41be4967ec720bc84303832ba530f41093d8508d9a5f34bb",
+      "dandi_asset_id": "aad2908c-6dd9-4933-90ac-8fb7d74d2661",
+      "subject": "sub-CS53"
+    },
+    {
+      "file": "sub-CS54/sub-CS54_ses-P54CSR1_behavior+ecephys.nwb",
+      "bytes": 1132988695,
+      "sha256": "49a91928481e72ed623b9b828f90adc87c08101318197525d618e9c5c887de54",
+      "dandi_asset_id": "f436895a-76af-4eff-a59f-2486e1793eb8",
+      "subject": "sub-CS54"
+    },
+    {
+      "file": "sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb",
+      "bytes": 1127644867,
+      "sha256": "a5e893b12ae12b1868be517136f1785469b999247ad9f83453d7b5c282e25446",
+      "dandi_asset_id": "35aeef17-7217-4ac6-b414-673c3f27dfff",
+      "subject": "sub-CS54"
+    },
+    {
+      "file": "sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb",
+      "bytes": 924729036,
+      "sha256": "e9768bf1a58322fabbd6aa577813c699ccd83018904cb2aa5e0a6e2ee84eca6c",
+      "dandi_asset_id": "c8699e04-cf32-4bcd-808f-bf40dd12ebb0",
+      "subject": "sub-CS55"
+    },
+    {
+      "file": "sub-CS55/sub-CS55_ses-P55CSR2_behavior+ecephys.nwb",
+      "bytes": 811170897,
+      "sha256": "93b7c6115fb7aafec5a5303a8eef877e458a27bc2388362a9536f8d1050d7195",
+      "dandi_asset_id": "a90b7d86-b765-4487-b02b-800b10dc0a35",
+      "subject": "sub-CS55"
+    },
+    {
+      "file": "sub-CS56/sub-CS56_ses-P56CSR1_behavior+ecephys.nwb",
+      "bytes": 1139766698,
+      "sha256": "ab6e51faf199447f0525b061634650b505131159d5cfd004691886cf2f3e9177",
+      "dandi_asset_id": "ee5ecd54-5180-4961-a0af-e9fa9430d219",
+      "subject": "sub-CS56"
+    },
+    {
+      "file": "sub-CS56/sub-CS56_ses-P56CSR2_behavior+ecephys.nwb",
+      "bytes": 1187278887,
+      "sha256": "4d0bb1006526e35f2fa9cdb56f36417471e553ef6311824b6b2b6eaf51218f32",
+      "dandi_asset_id": "754de6ac-afad-4055-813c-e17227d4d585",
+      "subject": "sub-CS56"
+    },
+    {
+      "file": "sub-CS57/sub-CS57_ses-P57CSR1_behavior+ecephys.nwb",
+      "bytes": 910108268,
+      "sha256": "c2acdfa20cdf78cc3b418d0541b1562a3e4c4eb025d65e2e512350db9d366415",
+      "dandi_asset_id": "00596f9b-e6cd-47d5-b5bf-bb6a85edbc4b",
+      "subject": "sub-CS57"
+    },
+    {
+      "file": "sub-CS57/sub-CS57_ses-P57CSR2_behavior+ecephys.nwb",
+      "bytes": 935356986,
+      "sha256": "357d8cdfbf06c30178605923131bbbd0e5a1fce52507d9bd37f4aae522fdd9c2",
+      "dandi_asset_id": "1f5ea62a-b866-457f-a5b8-acf459d42216",
+      "subject": "sub-CS57"
+    },
+    {
+      "file": "sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb",
+      "bytes": 815928563,
+      "sha256": "eb25b4b187bcaf2f246942c54daf434fa82faecb6ccc8d9f8fb2be884945dc33",
+      "dandi_asset_id": "3337870b-72a7-4d6f-bbff-8956ee3ea4e0",
+      "subject": "sub-CS58"
+    },
+    {
+      "file": "sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb",
+      "bytes": 913830001,
+      "sha256": "c41a23cf67cdb94cc26cb65699b21efb7546ad95cf83f99a6ca0d635d28fc4ca",
+      "dandi_asset_id": "7e9fffc4-9720-4c1b-b282-93ab19e746d5",
+      "subject": "sub-CS60"
+    },
+    {
+      "file": "sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb",
+      "bytes": 548202540,
+      "sha256": "92d118453b137283b18c62b6ba5271d910b4c0701a894a34b88c996ab711dd17",
+      "dandi_asset_id": "aea3c535-a69a-41a6-9ffc-ceea9c7e6bae",
+      "subject": "sub-CS62"
+    },
+    {
+      "file": "sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb",
+      "bytes": 492201332,
+      "sha256": "59d5a05dd9aab5be88e8b7e3fda08ecbf42a91fcfac2dc8189d8089930e44cdf",
+      "dandi_asset_id": "7887e844-7100-4384-975e-5ee38dbf153d",
+      "subject": "sub-CS62"
+    }
+  ]
+}

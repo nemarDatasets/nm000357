@@ -1,0 +1,7 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "MNI152 template space as provided by the data authors: the source writer reads the per-patient file macro_MNI.xyz and Keles et al. (2024) state that electrode locations are provided in MNI152 coordinates and visualised on the MNI152NLin2009cAsym template. The exact MNI152 template variant used to compute these values is not stated, so a specific template label is not asserted. Axes follow MNI convention (x right, y anterior, z superior), in mm. The per-column axis descriptions stored in the NWB electrodes table (e.g. \"+x is posterior\") are PyNWB defaults and do not describe these values. Electrodes with missing source coordinates are n/a. The authors note that some template-space locations fall in white matter due to misregistration; localisation was confirmed in native space, which is not distributed.",
+  "iEEGCoordinateProcessingDescription": "Co-registration of pre-operative MRI with post-operative MRI and/or CT, then normalisation to MNI152 (source: Keles et al. 2024)",
+  "iEEGCoordinateProcessingReference": "https://doi.org/10.1038/s41597-024-03029-1"
+}

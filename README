@@ -1,0 +1,145 @@
+Movie watching and recognition memory: depth-electrode macro iEEG (Keles et al. 2024, DANDI 000623)
+=====================================================================================================
+
+Overview
+--------
+Intracranial EEG from the clinical macroelectrode contacts of hybrid Behnke-Fried depth electrodes in
+patients with drug-resistant epilepsy undergoing invasive monitoring at Cedars-Sinai Medical Center.
+In each run participants passively watched an 8-min edited excerpt of Alfred Hitchcock's "Bang! You're
+Dead" (encoding) and then performed a new/old recognition memory test on 40 movie frames (20 seen,
+20 unseen) with a 1-6 confidence rating. Electrodes targeted amygdala, hippocampus and medial frontal
+cortex (ACC, pre-SMA, vmPFC); implanted orthogonally, the macro contacts also sample lateral cortex.
+
+This dataset is an iEEG-BIDS representation of the macroelectrode field potentials released by the
+authors in NWB format on the DANDI Archive:
+
+  Keles U, Dubois J, Le KJM, Tyszka JM, Kahn DA, Reed CM, Chung JM, Mamelak AN, Adolphs R, Rutishauser U
+  (2024). Data for: Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie
+  watching in human patients (Version 0.240227.2023). DANDI archive.
+  https://dandiarchive.org/dandiset/000623/0.240227.2023  (license CC-BY-4.0)
+
+  Data descriptor: Keles U et al. Multimodal single-neuron, intracranial EEG, and fMRI brain responses
+  during movie watching in human patients. Sci Data 11, 214 (2024). https://doi.org/10.1038/s41597-024-03029-1
+
+Please cite both. The fMRI part of the study is separately available in BIDS on OpenNeuro (ds004798);
+it is not duplicated here. Single-neuron spike times, microwire LFP, eye tracking, pupil, fixations,
+saccades and blinks are not converted to BIDS; they remain available, unchanged, in the original NWB
+files copied under sourcedata/dandi-000623/ and on DANDI.
+
+Ethics
+------
+From the data descriptor: participation was voluntary and participants (or their legal guardian if
+under 18) provided informed consent. All protocols were approved by the Institutional Review Boards of
+the California Institute of Technology (IRB 16-0692F) and Cedars-Sinai Medical Center (IRB 13369).
+This deposit is a redistribution of the publicly released data under its CC-BY-4.0 license; the
+original release carries the ethics permissions.
+
+Contents
+--------
+16 participants (sub-CS41 ... sub-CS62; 10 female, 6 male; age 17-67 years), 29 recordings
+(13 participants with two runs, 3 with one run), 2754 macro channels in total (40-128 per recording,
+1000 Hz), about 6.5 h of data (656-1036 s per recording). The data descriptor reports 20 participants
+for the whole study; 4 of them only took part in the fMRI part, so DANDI 000623 (and this dataset)
+contains the 16 participants with intracranial recordings.
+
+  sub-<label>                  DANDI subject label (e.g. CS62 = study patient code P62CS).
+  ses-<label>                  DANDI session label, e.g. P62CSR1 / P62CSR2 = run 1 / run 2 of the
+                               experiment in the epilepsy monitoring unit (see Table 1 of the paper
+                               for participants with a single run).
+  ieeg/*_ieeg.vhdr/.vmrk/.eeg  BrainVision, IEEE float32, microvolts, resolution 1.0.
+  ieeg/*_channels.tsv          one row per macro contact, in the column order of the source series.
+  ieeg/*_electrodes.tsv        source contact coordinates (see Coordinates).
+  ieeg/*_events.tsv            trials, TTL markers and movie-frame times (see Events).
+  sourcedata/dandi-000623/     byte-identical copies of the DANDI NWB files (+ dandiset.yaml);
+                               sourcedata/sourcedata_provenance.json lists size, SHA-256 and DANDI asset id.
+
+Signal: what was converted and how
+----------------------------------
+Source: processing/ecephys/LFP_macro/ElectricalSeries of each NWB file (unit volts, conversion 1.0,
+offset 0, no channel_conversion, regular 1000 Hz clock given by starting_time and rate). The values
+were written unchanged to BrainVision as float32 microvolts. For every file the conversion checked
+that float32(volts x 1e6) x 1e-6 reproduces the stored float64 volts exactly (see Conversion checks);
+no filtering, resampling, re-referencing, cropping or channel removal was done by this conversion.
+
+Processing already applied by the authors (Keles et al. 2024, Methods/Data Records): macro channels
+were acquired with a Neuralynx ATLAS system at 2000 Hz with a 0.1 Hz hardware high-pass, then
+low-pass filtered at 500 Hz (anti-aliasing) and decimated to 1000 Hz. The recordings were cropped by
+the authors to 10 s before movie onset through 10 s after the end of the task. The notch filter,
+0.1 Hz high-pass and common-average reference described in the paper's "LFP and iEEG data
+processing" section are analysis steps for the quality validation; the authors' released code
+(code/ephys_qc/ieeg/prep_filterLFP.py) applies them after reading the NWB files, consistent with
+the released series not containing them. The reference of the macro recordings is
+not documented by the source; iEEGReference is therefore stated as unknown.
+
+For participant CS62 (P62CS) the authors' NWB writer keeps only the first 40 macro channels.
+All 29 NWB files contain an LFP_macro series with a regular 1000 Hz clock; all were converted.
+Recording CS53/P53CSR2 has 35 trial rows (1 encoding + 34 recognition) instead of 41, as in the
+source trials table.
+
+Channel names are the authors' original lab labels (origchannel_name, e.g. RAMY1 = right amygdala
+contact 1); channels.tsv also gives the source electrode-table row and origchannel ("macro-N").
+Channel type SEEG: all contacts are on depth electrodes. The source provides no bad-channel marking,
+so no status column is given.
+
+Timing and events
+-----------------
+The NWB behavioural clock has movie onset (TTL 4) at 0 s. The LFP series was stored with its own
+clock that starts 10 s earlier (the series description states "the session starts at 10.0 seconds";
+the first stored sample is at starting_time, e.g. 0.000834 s for P62CSR2). Event onsets in BIDS are
+relative to the first sample:  onset = source_time + 10 s - starting_time.  The original source times
+are kept in source_start_time / source_stop_time / source_response_time. trial_type levels:
+encoding (movie interval), recognition (one row per frame trial), ttl (all TTL codes, with the
+experiment id recorded at the same time), movie_frame (stimulus/presentation/movieframe_time).
+For recognition trials response_time is the latency (source response time - trial start); the
+source "response_time" column is an absolute time in the session clock and is kept as
+source_response_time. The movie and the frame images are copyrighted and are not distributed.
+
+Coordinates
+-----------
+electrodes.tsv x/y/z are copied from the NWB electrodes table, which the authors' writer fills from
+per-patient MNI coordinate files (macro_MNI.xyz). The paper states that locations are provided in
+MNI152 coordinates and shows them on the MNI152NLin2009cAsym template; because the template variant
+used to compute the values is not stated, coordsystem.json uses iEEGCoordinateSystem "Other" with
+this description, units mm. The NWB column descriptions ("+x is posterior" etc.) are PyNWB defaults
+and do not describe these values. The authors note that some template-space locations fall in white
+matter due to misregistration. Native-space coordinates and images are not released.
+
+Participants and privacy
+------------------------
+participants.tsv gives age (years), sex, species, the epilepsy diagnosis text and the DANDI subject
+id, all copied from the NWB subject metadata. No acquisition dates are given in BIDS. The NWB files
+carry a session_start_time; per the data descriptor ("For anonymity, the session dates
+(NWBFile.session_start_time) are not the actual dates of the sessions") these are not real dates.
+
+Conversion checks
+-----------------
+- Source: 29/29 DANDI assets (27,744,749,325 bytes) verified by SHA-256 against the DANDI digests;
+  sourcedata copies re-verified after copying.
+- Signal: for every recording, MNE (1.13) reading of the BrainVision file reproduces every stored
+  NWB sample exactly (float64 volts, bit-identical; no non-finite samples in the source), with the
+  same channel order as the source electrode region and the same sampling rate and sample count.
+- Events: every trial, TTL and movie-frame onset recomputed from the NWB with the 10 s pre-roll
+  correction agrees with events.tsv within 1 microsecond (onsets are written with 6 decimals); no
+  event falls outside the recording. Movie onset (TTL 4) is at source time 0 in every file.
+- BIDS validator (bids-validator 3.0.2): 0 errors; remaining warnings are recommended fields that the
+  source does not document (e.g. iEEGGround, DeviceSerialNumber, CogAtlasID, HEDVersion).
+
+Known limitations
+-----------------
+- The released field potentials are already downsampled/low-passed by the authors (see above);
+  "raw" here means "earliest released form", not the 2000 Hz acquisition.
+- Reference and electrode contact size are not documented in the source and are given as unknown/n/a.
+- Movie-frame, TTL and trial times come from the stimulus computer clock synchronised by the authors
+  to the recording via TTLs; this conversion does not re-estimate that synchronisation.
+
+Provenance
+----------
+Source: DANDI:000623 version 0.240227.2023, all 29 assets downloaded with the dandi CLI (0.81.0)
+on 2026-10-06 and verified against the DANDI SHA-256 digests. Conversion script:
+laneB_ieeg005_bids.py (h5py 3.16, numpy 2.5, pybv 0.8.1). Prior automated BIDS layouts of this
+Dandiset exists on GitHub (github.com/bids-dandisets/000623): an automatically generated nwb2bids
+layout following the draft BEP032 microephys schema, whose .nwb entries are 88-byte URL pointers to
+the DANDI files, with generic channel tables (type n/a, sampling frequency -1) not mapped to the macro
+series, no DOI and no version of record. It is a metadata mirror of the same NWB release, not an
+archived iEEG-BIDS copy; it is acknowledged here as related prior work. As of 2026-10-06 no iEEG-BIDS
+version of these recordings was found on DANDI, OpenNeuro (ds004798 is the fMRI part only) or NEMAR.

@@ -1,0 +1,49 @@
+{
+  "Name": "Movie watching and recognition memory: depth-electrode macro iEEG from Keles et al. 2024 (DANDI 000623)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Umit Keles",
+    "Julien Dubois",
+    "Kevin J. M. Le",
+    "J. Michael Tyszka",
+    "David A. Kahn",
+    "Chrystal M. Reed",
+    "Jeffrey M. Chung",
+    "Adam N. Mamelak",
+    "Ralph Adolphs",
+    "Ueli Rutishauser"
+  ],
+  "Acknowledgements": "Data collected and originally released by the authors above (Cedars-Sinai Medical Center and California Institute of Technology). This iEEG-BIDS representation of the macroelectrode recordings was produced by Bruno Aristimunha from the DANDI release (DANDI:000623/0.240227.2023) without changing signal values; see README for the exact mapping. Original acknowledgement: 'We would like to express our deepest gratitude to the patients who volunteered to participate in this study. We thank the clinical team at Cedars-Sinai Medical Center for patient management, Michael Kyzar for advice on NWB usage, and Nand Chandravadia, and April Carlson for assistance with data processing. We thank Rhodri Cusack for sharing the edited version of the Hitchcock movie with us.'",
+  "HowToAcknowledge": "Please cite the data descriptor: Keles, U., Dubois, J., Le, K.J.M., Tyszka, J.M., Kahn, D.A., Reed, C.M., Chung, J.M., Mamelak, A.N., Adolphs, R. & Rutishauser, U. Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie watching in human patients. Sci Data 11, 214 (2024). https://doi.org/10.1038/s41597-024-03029-1 ; and the source data: Keles et al. (2024) Data for: Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie watching in human patients (Version 0.240227.2023). DANDI archive. https://dandiarchive.org/dandiset/000623/0.240227.2023",
+  "Funding": [
+    "NIMH Caltech Conte Center P50MH094258 (R.A., U.R.)",
+    "BRAIN Initiative / NINDS U01NS117839 (U.R.)",
+    "Simons Collaboration on the Global Brain 542941 (R.A., U.R.)",
+    "National Science Foundation BCS-2219800"
+  ],
+  "EthicsApprovals": [
+    "California Institute of Technology Institutional Review Board, IRB 16-0692F",
+    "Cedars-Sinai Medical Center Institutional Review Board, IRB 13369"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1038/s41597-024-03029-1",
+    "https://dandiarchive.org/dandiset/000623/0.240227.2023",
+    "https://github.com/rutishauserlab/bmovie-release-NWB-BIDS",
+    "https://openneuro.org/datasets/ds004798"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://dandiarchive.org/dandiset/000623/0.240227.2023",
+      "DOI": "doi:10.48324/dandi.000623/0.240227.2023",
+      "Version": "0.240227.2023"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "laneB_ieeg005_bids.py (iEEG-NEMAR campaign 2026-10)",
+      "Description": "Selects processing/ecephys/LFP_macro/ElectricalSeries from each NWB file, writes BrainVision float32 microvolts (resolution 1.0) without filtering, resampling, re-referencing or channel removal; maps trials, TTL markers and movie-frame timestamps to events with the source 10 s LFP pre-roll correction; copies the original NWB files byte-identically into sourcedata/."
+    }
+  ]
+}

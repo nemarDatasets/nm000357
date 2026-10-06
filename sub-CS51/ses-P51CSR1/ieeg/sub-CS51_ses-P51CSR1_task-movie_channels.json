@@ -1,0 +1,19 @@
+{
+  "group": {
+    "Description": "NWB ElectrodeGroup name of the contact (the source stores each macro contact as its own group, Neuralynx-Atlas-macros-N)."
+  },
+  "low_cutoff": {
+    "Description": "Hardware high-pass of the acquisition (Keles et al. 2024).",
+    "Units": "Hz"
+  },
+  "high_cutoff": {
+    "Description": "Anti-aliasing low-pass applied by the authors before decimation to 1000 Hz (Keles et al. 2024).",
+    "Units": "Hz"
+  },
+  "source_origchannel": {
+    "Description": "NWB electrodes table column origchannel (original channel ID, macro-N)."
+  },
+  "source_electrode_row": {
+    "Description": "Zero-based row of the NWB electrodes table referenced by the LFP_macro ElectricalSeries electrode region for this column."
+  }
+}

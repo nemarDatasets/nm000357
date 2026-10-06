@@ -1,0 +1,8 @@
+{
+  "participant_id": {"Description": "BIDS subject label; equal to the DANDI subject label of DANDI 000623 (e.g. sub-CS62)."},
+  "age": {"Description": "Age at the recording, from NWB general/subject/age (ISO 8601 duration, years). Values above 89 would be reported as 90.", "Units": "year"},
+  "sex": {"Description": "Sex from NWB general/subject/sex.", "Levels": {"F": "female", "M": "male"}},
+  "species": {"Description": "Species from NWB general/subject/species."},
+  "epilepsy_diagnosis": {"Description": "Epilepsy diagnosis (seizure-onset localisation) as stated in NWB general/subject/description ('epilepsy diagnosis: ...'), verbatim."},
+  "dandi_subject_id": {"Description": "NWB general/subject/subject_id in the source file."}
+}

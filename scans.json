@@ -1,0 +1,5 @@
+{
+  "source_file": {"Description": "Original NWB file (DANDI 000623 asset path) from which the recording was converted; byte-identical copy under sourcedata/dandi-000623/."},
+  "source_sha256": {"Description": "SHA-256 of the source NWB file, equal to the DANDI asset digest dandi:sha2-256."},
+  "source_first_lfp_timestamp_s": {"Description": "starting_time of processing/ecephys/LFP_macro/ElectricalSeries in the source NWB, in the source LFP clock whose zero is 10 s before movie onset.", "Units": "s"}
+}

@@ -1,0 +1,15 @@
+{
+  "group": {
+    "Description": "NWB ElectrodeGroup name of the contact."
+  },
+  "location": {
+    "Description": "Brain area of the contact as given in the NWB electrodes table (location column), assigned by the data authors."
+  },
+  "source_origchannel": {
+    "Description": "NWB electrodes table column origchannel (macro-N)."
+  },
+  "size": {
+    "Description": "Contact surface area; not documented by the source.",
+    "Units": "mm^2"
+  }
+}

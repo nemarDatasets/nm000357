@@ -1,0 +1,17 @@
+participant_id	age	sex	species	epilepsy_diagnosis	dandi_subject_id
+sub-CS41	21	F	Homo sapiens	Left Other	CS41
+sub-CS42	25	F	Homo sapiens	Not Localized	CS42
+sub-CS43	42	F	Homo sapiens	Left Mesial Temporal	CS43
+sub-CS44	53	F	Homo sapiens	Right Mesial Temporal	CS44
+sub-CS47	32	M	Homo sapiens	Right Mesial Temporal	CS47
+sub-CS48	32	F	Homo sapiens	Left Mesial Temporal	CS48
+sub-CS49	24	F	Homo sapiens	Left Mesial Temporal	CS49
+sub-CS51	17	M	Homo sapiens	Not Localized	CS51
+sub-CS53	60	M	Homo sapiens	Bilateral Independent Temporal	CS53
+sub-CS54	59	F	Homo sapiens	Right Mesial Temporal	CS54
+sub-CS55	43	F	Homo sapiens	Right Mesial Temporal	CS55
+sub-CS56	48	M	Homo sapiens	Bilateral Independent Temporal	CS56
+sub-CS57	46	M	Homo sapiens	Left Other	CS57
+sub-CS58	32	F	Homo sapiens	Right Lateral Frontal	CS58
+sub-CS60	67	M	Homo sapiens	Left Mesial Temporal	CS60
+sub-CS62	25	F	Homo sapiens	Right Mesial Temporal	CS62
