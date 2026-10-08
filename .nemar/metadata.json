@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Movie watching and recognition memory: depth-electrode macro iEEG from Keles et al. 2024 (DANDI 000623)",
-  "description": "Intracranial EEG recorded from clinical macroelectrode contacts of hybrid Behnke-Fried depth electrodes in 16 patients with drug-resistant epilepsy at Cedars-Sinai Medical Center. Participants passively watched an edited 8-minute excerpt of Hitchcock's \"Bang! You're Dead\" and then completed a new/old recognition memory test on movie frames with confidence ratings. Electrodes sampled amygdala, hippocampus, medial frontal cortex and lateral cortex. This iEEG-BIDS representation converts the macroelectrode field potentials from the DANDI 000623 NWB release without altering signal values.",
-  "methods_description": "Macro channels were acquired with a Neuralynx ATLAS system at 2000 Hz, low-pass filtered at 500 Hz, and decimated to 1000 Hz. Recordings were cropped by the original authors to 10 s before movie onset through 10 s after the end of the task. The NWB LFP_macro ElectricalSeries was written to BrainVision float32 microvolts without filtering, resampling, re-referencing or channel removal. Trials, TTL markers and movie-frame times were mapped to BIDS events.",
+  "description": "Intracranial EEG recorded from clinical macroelectrode contacts of hybrid Behnke-Fried depth electrodes in 16 patients with drug-resistant epilepsy undergoing invasive monitoring. Participants passively watched an 8-minute edited excerpt of Hitchcock's \"Bang! You're Dead\" and then performed a new/old recognition memory test on 40 movie frames with confidence ratings. Electrodes targeted the amygdala, hippocampus and medial frontal cortex. This is an iEEG-BIDS conversion of the macroelectrode field potentials originally released in NWB format on DANDI (000623).",
+  "methods_description": "Macro channels were acquired with a Neuralynx ATLAS system at 2000 Hz with a 0.1 Hz hardware high-pass, low-pass filtered at 500 Hz and decimated to 1000 Hz. The NWB LFP_macro series were written unchanged to BrainVision float32 microvolts, with no filtering, resampling or re-referencing. Trials, TTL markers and movie-frame times were mapped to BIDS events with a 10 s pre-roll correction.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -44,12 +44,17 @@
       "term": "recognition memory"
     },
     {
+      "term": "depth electrodes"
+    },
+    {
       "term": "Epilepsy",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "depth electrodes"
+      "term": "Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
     }
   ],
   "related_identifiers": [
@@ -105,6 +110,7 @@
   "formats": [
     ".eeg",
     ".json",
+    ".md",
     ".nwb",
     ".tsv",
     ".vhdr",
@@ -112,5 +118,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f3d2dd0d13e5c3a23e65bb074ccaa28c7a62506bf431c1499ea2e73db3705297"
+  "source_hash": "ffa2083ce4eefbff9804f7de0af3b91779bfd20210add82a5969da666437464b"
 }
