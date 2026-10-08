@@ -53,5 +53,7 @@
       "Name": "laneB_ieeg005_bids.py (iEEG-NEMAR campaign 2026-10)",
       "Description": "Selects processing/ecephys/LFP_macro/ElectricalSeries from each NWB file, writes BrainVision float32 microvolts (resolution 1.0) without filtering, resampling, re-referencing or channel removal; maps trials, TTL markers and movie-frame timestamps to events with the source 10 s LFP pre-roll correction; copies the original NWB files byte-identically into sourcedata/."
     }
-  ]
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000357",
+  "Version": "1.0.0"
 }
