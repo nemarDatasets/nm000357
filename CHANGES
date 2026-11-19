@@ -1,2 +1,5 @@
+1.0.1 2026-11-19
+  - Name the electrode coordinate system MNI152NLin2009cAsym (was Other) in all 29 coordsystem.json files, citing Keles et al. 2024; README Coordinates section updated
+
 1.0.0 2026-10-06
   - Initial iEEG-BIDS representation of the macroelectrode recordings of DANDI 000623 version 0.240227.2023.
