@@ -116,9 +116,9 @@ Coordinates
 -----------
 electrodes.tsv x/y/z are copied from the NWB electrodes table, which the authors' writer fills from
 per-patient MNI coordinate files (macro_MNI.xyz). The paper states that locations are provided in
-MNI152 coordinates and shows them on the MNI152NLin2009cAsym template; because the template variant
-used to compute the values is not stated, coordsystem.json uses iEEGCoordinateSystem "Other" with
-this description, units mm. The NWB column descriptions ("+x is posterior" etc.) are PyNWB defaults
+MNI152 coordinates and shows them on the MNI152NLin2009cAsym template (the authors' figure code plots
+these x/y/z on that template); coordsystem.json therefore uses iEEGCoordinateSystem
+"MNI152NLin2009cAsym" with a description quoting the paper, units mm. The NWB column descriptions ("+x is posterior" etc.) are PyNWB defaults
 and do not describe these values. The authors note that some template-space locations fall in white
 matter due to misregistration. Native-space coordinates and images are not released.
 
